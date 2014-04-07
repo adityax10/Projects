@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="5dp">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/loading"
+        />
+    <TextView
+        android:id="@+id/newsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/newsImage"
+        android:layout_alignParentLeft="true"
+        android:text="Heading"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="2dp" />
+<RelativeLayout 
+    android:id="@+id/infohandler"
+     android:layout_below="@+id/newsHeading"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@+id/newsImage"
+     >
+     
+    <TextView
+        android:id="@+id/newsSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Source"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/newsDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/newsSource"
+        android:layout_marginLeft="10dp"
+        android:text="Duration"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/newsSnippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infohandler"
+        android:layout_toLeftOf="@+id/newsImage"
+        android:layout_alignParentLeft="true"
+        android:text="News Snippet" 
+        android:padding="2dp"/>
+</RelativeLayout>
+</RelativeLayout>

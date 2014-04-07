@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference 
+        android:key="DefaultCheckStatus"
+        android:title="Use Default Region"
+        android:summary="Check if you want to use The Default Region while Updating"/>
+        
+    <ListPreference
+        android:key="defaultRegion"
+        android:summary="Select your default region"
+        android:title="Default Region" 
+        android:entries="@array/regions"
+        android:entryValues="@array/region_values"
+        android:selectable="true"
+        />
+    
+      <ListPreference
+        android:key="defaultLang_indiaSupport"
+        android:summary="Select your default Language(Only For Indian Edition)"
+        android:title="Language" 
+        android:entries="@array/lang"
+        android:entryValues="@array/lang_values"
+        android:selectable="true"
+        />
+    
+
+</PreferenceScreen>

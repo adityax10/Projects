@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <string-array name="regions">
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>België</item>
+        <item>Belgique</item>
+        <item>Botswana</item>
+        <item>Brasil</item>
+        <item>Canada English</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Cuba</item>
+        <item>Deutschland</item>
+        <item>Ethiopia</item>
+        <item>France</item>
+        <item>Ghana</item>
+        <item>India</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italia</item>
+        <item>Kenya</item>
+        <item>Malaysia</item>
+        <item>México</item>
+        <item>Namibia</item>
+        <item>New Zeland</item>
+        <item>Nigeria</item>
+        <item>Pakistan</item>
+        <item>Perú</item>
+        <item>Philippines</item>
+        <item>Polska</item>
+        <item>Portugal</item>
+        <item>Schweiz</item>
+        <item>Singapore</item>
+        <item>South Africa</item>
+        <item>U.K.</item>
+        <item>U.S.</item>
+        <item>Venezuela</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string-array name="region_values">
+        <item>es_ar</item>
+        <item>au</item>
+        <item>nl_be</item>
+        <item>fr_be</item>
+        <item>en_bw</item>
+        <item>BR_br</item>
+        <item>ca</item>
+        <item>es_cl</item>
+        <item>es_co</item>
+        <item>es_cu</item>
+        <item>de</item>
+        <item>en_et</item>
+        <item>fr</item>
+        <item>en_gh</item>
+        <item>in</item>
+        <item>en_ie</item>
+        <item>en_il</item>
+        <item>it</item>
+        <item>en_ke</item>
+        <item>en_my</item>
+        <item>en_mx</item>
+        <item>en_na</item>
+        <item>nz</item>
+        <item>en_ng</item>
+        <item>en_pk</item>
+        <item>es_pe</item>
+        <item>en_ph</item>
+        <item>pl_pl</item>
+        <item>pt-PT_pt</item>
+        <item>de_ch</item>
+        <item>en_sg</item>
+        <item>en_za</item>
+        <item>uk</item>
+        <item>us</item>
+        <item>es_ve</item>
+        <item>en_zw</item>
+    </string-array>
+    <string-array name="templist">
+        <item >Option 1</item>
+        <item >Option 2</item>
+    </string-array>
+    <string-array name="templistvalues">
+        <item >1</item>
+        <item >2</item>
+    </string-array>
+    <string-array name="category">Top StoriesTop Stories
+        <item >Top Stories</item>
+        <item >World</item>
+        <item >Business</item>
+        <item >Technology</item>
+        <item >Entertainment</item>
+        <item >Sports</item>
+        <item >Science</item>
+        <item >Health</item>
+        <item >SpotLight</item>
+    </string-array>
+    <string-array name="category_values">
+        <item >h</item>
+        <item >w</item>
+        <item >b</item>
+        <item >tc</item>
+        <item >e</item>
+        <item >s</item>
+        <item >snc</item>
+        <item >m</item>
+        <item >ir</item>
+    </string-array>
+    <string-array name="lang">
+        <item >English</item>
+        <item >Hindi</item>
+        <item >Tamil</item>
+        <item >Telgu</item>
+    </string-array>
+    <string-array name="lang_values">
+        <item >en</item>
+        <item >hi</item>
+        <item >ta</item>
+        <item >te</item>
+    </string-array>
+    
+    
+</resources>

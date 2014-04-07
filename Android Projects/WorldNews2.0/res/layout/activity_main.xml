@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/worldnews"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/newsListSpace"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rlb"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="#eee"
+            android:padding="2dp"
+            android:scrollbarFadeDuration="100"
+            android:scrollbarStyle="outsideOverlay" />
+
+        <RelativeLayout
+            android:id="@+id/rlb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+          >
+
+            <Spinner
+                android:id="@+id/RegionSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/buttonUpdate"
+                android:entries="@array/regions"
+                android:fadingEdge="horizontal" >
+            </Spinner>
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/search"
+                android:background="@android:drawable/alert_light_frame"
+                 android:layout_alignParentRight="true"
+                android:includeFontPadding="true"
+                android:text="Update" 
+                android:drawableLeft="@drawable/refresh_icon"/>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <SlidingDrawer
+        android:id="@+id/drawer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:content="@+id/content"
+        android:handle="@+id/handle2"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/handle2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:src="@drawable/abs__ic_menu" />
+
+        <LinearLayout
+            android:id="@id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#eddd"
+                android:drawableLeft="@drawable/category_icon"
+                android:padding="2dp"
+                android:shadowColor="#ddd"
+                android:text=" Categories "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ListView
+                android:id="@+id/category"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#dfff"
+                android:entries="@array/category"
+                android:padding="2dp"
+                android:scrollbarStyle="insideInset" >
+            </ListView>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>
